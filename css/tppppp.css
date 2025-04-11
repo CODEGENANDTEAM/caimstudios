@@ -1,0 +1,568 @@
+/* Custom Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/* Base Styles */
+body {
+  font-family: 'Shadows Into Light Two', cursive;
+  background-color: #1B1714;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Shadows Into Light Two', cursive;  margin: 0;
+  color: #FAEBD7;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 5%;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 20px; /* Keeps it slightly below the top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Keeps it centered */
+  height: 40px;
+  max-width: 1000px;
+  z-index: 100;
+  border-radius: 10px; /* More rounded */
+  backdrop-filter: blur(10px); /* Adds a soft glass effect */
+}
+
+/* Navigation Menu */
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Links */
+nav a {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FAEBD7;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 35px; /* Rounds individual links slightly */
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.9); 
+    color: #D4AF37;
+}
+
+
+/* Content Section */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 5%; /* Reduced left padding to move left */
+    width: auto;
+}
+
+/* Text Section (Left Side) */
+.text {
+    max-width: 750px; /* Increased max width for better spacing */
+    color: #FFFFFF;
+    padding-left: 5%; /* Moves text more to the left */
+}
+
+.text h1 {
+    font-size: 6rem; /* Bigger text */
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    padding-right: 5%; /* Keeps some spacing */
+}
+
+  .highlight {
+    color: #C38A5D; /* Highlighted color */
+  }
+  
+  /* Button Styling */
+  .book-btn {
+    background: #C38A5D;
+    color: #1B1714;
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    transform: translateY(-3px);
+    background: #a36e47;
+  }
+  
+  /* Schedule Styling */
+  .schedule {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .schedule span {
+    font-weight: bold;
+    color: #C38A5D;
+  }
+  
+  /* Image Section (Right Side) */
+  .image-container {
+    max-width: 50%;
+    text-align: right;
+  }
+  
+  .image-container img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.01);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text .highlight {
+  color: #C38A5D;
+}
+
+
+
+.schedule {
+  margin-top: 1rem;
+}
+
+.schedule span {
+  font-weight: bold;
+  color: #C38A5D;
+}
+
+/* Hero Image */
+.hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.price-tag {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: #FFFFFF;
+  color: #1B1714;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+
+
+.tattoo-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tattoo-card {
+  background: #2A2522;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 250px;
+}
+
+.tattoo-card img {
+  width: 100%;
+}
+
+
+/* midsection*/
+.midsec{
+    padding-left: 10%;
+}
+#contus{
+    position: absolute;
+    left: 62%; /* Move it horizontally to the middle */
+    top:2030px;
+    
+}
+
+
+/* Club Info */
+.club-info {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.club-info p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  padding: 4rem 10%;
+}
+
+.client-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client {
+  background: #2A2522;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: left;
+  max-width: 500px;
+}
+
+.client img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.prev, .next {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #C38A5D;
+  cursor: pointer;
+}
+
+
+
+/* FAQ */
+.faq {
+    padding: 4rem 10%;
+  }
+  
+  .faq details {
+    background: #2A2522;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    overflow: hidden;
+  }
+  
+
+  /* FAQ Box */
+  .faq details {
+    background: #2A2522;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    overflow: hidden;
+  }
+  
+  /* Hover Effect - Change Background & Add Slight Lift */
+  .faq details:hover {
+    background: #3A322F; /* Slightly lighter */
+    transform: translateY(-3px);
+  }
+  
+  /* Summary Styling */
+  .faq summary {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #C38A5D;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect - Change Text Color */
+  .faq details:hover summary {
+    color: #E5A478; /* Lighter color on hover */
+  }
+  
+  /* Initially Hide Content */
+  .faq details p {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  /* Smoothly Expand and Fade in When Open */
+  .faq details[open] p {
+    max-height: 200px; /* Adjust this based on your content */
+    opacity: 1;
+  }
+
+  
+
+
+  
+
+/* Newsletter Section */
+.newsletter {
+    padding: 4rem 10%;
+    text-align: center;
+  }
+  
+  /* Newsletter Container */
+  .newsletter-container {
+    position: relative;
+    background: url('news.png') no-repeat center center;
+    background-size: contain; /* Ensures full image is visible */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7rem 5rem;
+    font-weight: bold;
+}
+  
+  /* Headline */
+  .newsletter-container h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 1.5rem;
+    padding-left: 30%;
+    padding-bottom: 2%;
+    font-family: "Shadows Into Light Two", cursive;
+  }
+  
+  /* Form */
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; /* Adjusted gap for better spacing */
+    margin-top: 1rem;
+    padding-left: 30%;
+
+  }
+  
+  /* Input */
+  .newsletter input {
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    width: 300px;
+    text-align: center;
+    background: #F7F3EF;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button */
+  .newsletter button {
+    background: #C38A5D;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: normal;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-size: 1rem;
+  }
+  
+  .newsletter button:hover {
+    background: #a36f48;
+  }
+ 
+
+
+
+
+/* Footer */
+footer {
+    background: #1B1714;
+    padding: 4rem 10%;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Links - Flexbox for even spacing */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows responsiveness */
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+/* Footer Column */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    position: relative;
+}
+
+/* Vertical Divider - Responsive */
+.footer-column:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -2rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #C38A5D;
+    opacity: 0.7;
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #C38A5D;
+    transform: translateY(-2px); /* Slight hover lift */
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social a:hover {
+    background: #C38A5D;
+    transform: scale(1.1);
+}
+
+.footer-social i {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #AAA;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.footer-bottom a {
+    color: #C38A5D;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #a36f48;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-column:not(:last-child)::after {
+        display: none; /* Remove vertical divider on mobile */
+    }
+}
+
+  

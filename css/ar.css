@@ -1,0 +1,324 @@
+
+
+
+body {
+    margin: 0;
+    color: #f5f0e1; /* Changed to beige/cream color */
+    background-color: #1B1714; /* Changed to match home page background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Add navigation styles to match home and pricing */
+header {
+    background-color: #1B1714;
+    padding: 20px 0;
+    position: static;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #f5f0e1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 12px 8px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #d4c5a8;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d4c5a8;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav ul li a.active {
+    color: #d4c5a8;
+}
+
+nav ul li a.active:after {
+    width: 100%;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f5f0e1;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+}
+
+/* Update app-container to fix footer sizing */
+.app-container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    background-color: #2A2522;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin: 80px auto;
+    min-height: calc(100vh - 160px); /* Adjust for better footer placement */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Update footer styles */
+footer {
+    margin-top: auto; /* Push footer to bottom */
+    padding: 20px;
+    background-color: #1B1714;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    margin: 20px 0;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Add responsive navigation styles */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: rgba(59, 43, 31, 0.95);
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        align-items: center;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .app-container {
+        margin: 60px auto;
+        width: 95%;
+    }
+}
+
+/* Add smaller screen adjustments */
+@media (max-width: 480px) {
+    .app-container {
+        width: 98%;
+        padding: 15px;
+    }
+
+    .footer-social img {
+        width: 25px;
+        height: 25px;
+        margin: 0 8px;
+    }
+}
+header h1 {
+    font-size: 2rem;
+    color: #d4c5a8; /* Changed from gold to beige */
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #f5f0e1; /* Cream color */
+    margin: 0 0 20px;
+}
+
+.preview-area {
+    position: relative;
+    border: 2px dashed #d4c5a8; /* Changed from gold to beige */
+    height: 400px;
+    background: #1B1714; /* Match background color */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.overlay-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: #d4c5a8; /* Changed from gold to beige */
+    text-align: center;
+    display: none;
+}
+
+.upload-controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #f5f0e1; /* Cream color */
+}
+
+input[type="file"] {
+    background: #1B1714; /* Match background */
+    border: 1px solid #d4c5a8; /* Changed from gold to beige */
+    color: #f5f0e1; /* Cream text */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="file"]:hover {
+    background-color: #d4c5a8; /* Changed from gold to beige */
+    color: #1B1714; /* Dark text */
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #5c4033; /* Brown button background */
+    color: #f5f0e1; /* Cream text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #8b5a2b; /* Lighter brown */
+    color: #f5f0e1; /* Cream text */
+}
+
+/* Add spacing for a clean layout */
+label,
+input {
+    margin: 10px auto;
+    max-width: 400px; /* Limit input size */
+    width: 100%; /* Responsive full width */
+    text-align: left; /* Align text left for labels */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #f5f0e1; /* Cream color */
+    text-align: center;
+    background-color: #1B1714;
+    padding: 15px;
+    width: 100%;
+    border-top: 2px solid #5c4033; /* Brown border */
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+footer .social-links a {
+    color: #d4c5a8; /* Changed from gold to beige */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #f5f0e1;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.book-btn {
+    background-color: #5c4033; /* Brown background */
+    color: #f5f0e1; /* Cream text */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    color: #f5f0e1; /* Cream text */
+    background-color: #8b5a2b; /* Lighter brown */
+}
+
+.upload-feedback {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #d4c5a8; /* Changed from gold to beige */
+    text-align: center;
+    display: none;
+}

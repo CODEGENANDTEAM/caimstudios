@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Tattoo Try-On</title>
+    <link rel="stylesheet" href="../css/ar.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <link rel="icon" href="../assests/logo.png" type="image/icon type">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home Page</a></li>
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Pricings</a></li>
+                <li><a href="ar.html">TRY ON</a></li>
+                <li><a href="reservations.html">reservations</a></li>
+                <li><button id="logoutBtn" class="logout-btn"><span class="text">LogOut</span><span>Thanks!</span></button></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="app-container">
+       
+        <main>
+            <div class="preview-area">
+                <canvas id="tattooCanvas"></canvas>
+                <div class="overlay-message" id="overlayMessage">
+                    Upload your body photo and tattoo design to get started.
+                </div>
+            </div>
+            <div class="upload-controls">
+                <label for="bodyPhoto">Body Photo:</label>
+                <input type="file" id="bodyPhoto" accept="image/*">
+                <label for="tattooDesign">Tattoo Design:</label>
+                <input type="file" id="tattooDesign" accept="image/*">
+            </div>
+        </main>
+        
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column">
+                <ul>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                   
+                    <li><a href="pricing.html">Pricings</a></li>
+                    <li><a href="#">TRY ON</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+            <a href="#"><img src="../assests/yt.png"></a>
+            <a href="#"><img src="../assests/ig.png"></a>
+            <a href="#"><img src="../assests/twitt.png"></a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <p>© 2023 Caim Studios. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/ar.js"></script>
+</body>
+</html>

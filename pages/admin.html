@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Add this in the head section -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Caim Tattoo</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    
+    <link rel="icon" href="../assests/logo.png" type="image/icon type">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add this in the head section -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+
+<body>
+    <nav class="top-nav">
+        <div class="logo">
+            <img src="../assests/logo.png" alt="Caim Tattoo">
+            <h2>Admin Panel</h2>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#bookings">Bookings</a></li>
+            <li><button id="logoutBtn" class="logout-btn">Logout</button></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="header-content">
+                <h1>Dashboard</h1>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Total Bookings</h3>
+                        <p id="totalBookings">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pending</h3>
+                        <p id="pendingBookings">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Approved</h3>
+                        <p id="approvedBookings">0</p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="bookings-section">
+                <div class="bookings-header">
+                    <h2>Recent Bookings</h2>
+                    <div class="filters">
+                        <select id="statusFilter">
+                            <option value="all">All Status</option>
+                            <option value="pending">Pending</option>
+                            <option value="approved">Approved</option>
+                            <option value="rejected">Rejected</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bookings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Client</th>
+                                <th>Artist</th>
+                                <th>Style</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookingsTableBody">
+                            <!-- Bookings will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <!-- Add this after the bookings-section -->
+    <div id="charts-dashboard" style="display: none;">
+        <div class="charts-grid">
+            <div class="chart-container">
+                <h3>Bookings by Status</h3>
+                <canvas id="statusChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Bookings by Artist</h3>
+                <canvas id="artistChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Bookings by Style</h3>
+                <canvas id="styleChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Bookings Timeline</h3>
+                <canvas id="timelineChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../js/admin.js"></script>
+</body>
+</html>

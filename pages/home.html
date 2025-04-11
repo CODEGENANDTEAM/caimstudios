@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caim Tattoo</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="icon" href="../assests/logo.png" type="image/icon type">
+
+</head>
+<body>
+    <button class="mobile-menu-toggle">☰</button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home Page</a></li>
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Pricings</a></li>
+                <li><a href="ar.html">TRY ON</a></li>
+                <li><a href="reservations.html">reservations</a></li>
+                <li><button id="logoutBtn" class="logout-btn"><span class="text">LogOut</span><span>Thanks!</span></button></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <div class="text">
+                <h1>We help you get a tattoo <span class="highlight">that Defies</span> Your Soul</h1>
+                <button class="book-btn">Book A Visit</button>
+                <div class="schedule">
+                    <p><span>Mon-Fri:</span> 11:00 - 21:00</p>
+                    <p><span>Sat-Sun:</span> 14:00 - 20:00</p>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="../assests/tatgirl.png" alt="Cyberpunk styled woman with body paintings">
+              
+            </div>
+        </section>
+        
+        <section class="tattoo-info">
+            <div class="process">
+               
+                <img class="midsec" src="../assests/midsec.png" alt="Tattoo artist" style="margin-left: 35px; ">
+                
+            </div>
+           
+        </section>
+     
+        
+        <section class="faq">
+            <h2>F.A.Q.</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the process?</h3>
+                        <span class="faq-toggle"><i class="plus-icon">+</i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We take you through a step-by-step consultation to design your dream tattoo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do you determine price?</h3>
+                        <span class="faq-toggle"><i class="plus-icon">+</i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Size, complexity, and color usage determine the final cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can you draw any tattoos?</h3>
+                        <span class="faq-toggle"><i class="plus-icon">+</i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We specialize in all tattoo styles and custom designs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your location?</h3>
+                        <span class="faq-toggle"><i class="plus-icon">+</i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are based in Goa. Visit us anytime!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="booking" id="booking">
+            <h2>Book Your Tattoo Experience</h2>
+            <div class="booking-container">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="artist">Select Artist</label>
+                        <select id="artist" name="artist" required>
+                            <option value="" disabled selected>Choose your artist</option>
+                            <option value="Alex Rivera">Alex Rivera</option>
+                            <option value="Sarah Chen">Sarah Chen</option>
+                            <option value="Mike Thompson">Mike Thompson</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="tattooStyle">Tattoo Style</label>
+                        <select id="tattooStyle" name="tattooStyle" required>
+                            <option value="" disabled selected>Select your style</option>
+                            <option value="Traditional">Traditional</option>
+                            <option value="Tribal">Tribal</option>
+                            <option value="Geometric">Geometric</option>
+                            <option value="Realism">Realism</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Self-idea">Self-idea</option>                                   <option value="Contemporary">Contemporary</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+    
+                    <!-- Add this after the date form-group -->
+                    <div class="form-group">
+                        <label for="timeSlot">Preferred Time</label>
+                        <select id="timeSlot" name="timeSlot" required>
+                            <option value="" disabled selected>Select time slot</option>
+                            <option value="10am-12pm">10:00 AM - 12:00 PM</option>
+                            <option value="1pm-3pm">1:00 PM - 3:00 PM</option>
+                            <option value="4pm-6pm">4:00 PM - 6:00 PM</option>
+                            <option value="7pm-9pm">7:00 PM - 9:00 PM</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Book Appointment</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Home Page</a></li>
+              
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="pricing.html">Pricings</a></li>
+              <li><a href="ar.html">TRY ON</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Social Icons -->
+        <div class="footer-social">
+          <a href="#"><img src="../assests/yt.png"></a>
+          <a href="#"><img src="../assests/ig.png"></i></a>
+          <a href="#"><img src="../assests/twitt.png"></i></a>
+        </div>
+      
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <p>© 2025 Fighting Star. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+
+
+      <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Mobile menu toggle
+                document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+                    document.querySelector('nav ul').classList.toggle('active');
+                });
+
+                // FAQ functionality
+                const faqItems = document.querySelectorAll('.faq-item');
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question');
+                    
+                    question.addEventListener('click', () => {
+                        // Check if this item is already active
+                        const isActive = item.classList.contains('active');
+                        
+                        // Close all items
+                        faqItems.forEach(otherItem => {
+                            otherItem.classList.remove('active');
+                        });
+                        
+                        // If the clicked item wasn't active, open it
+                        if (!isActive) {
+                            item.classList.add('active');
+                        }
+                    });
+                });
+            });
+        
+      </script>
+      
+      
+      <script type="module" src="../js/home.js"></script>
+</body>
+</html>

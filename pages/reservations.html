@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reservations - Caim Tattoo</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/reservations.css">
+    
+    <link rel="icon" href="../assests/logo.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home Page</a></li>
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Pricings</a></li>
+                <li><a href="ar.html">TRY ON</a></li>
+                <li><a href="reservations.html">reservations</a></li>
+                <li><button id="logoutBtn" class="logout-btn"><span class="text">LogOut</span><span>Thanks!</span></button></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="border-radius: 20px;">
+        <header class="page-header">
+            <nav class="top-nav">
+                <div class="user-info">
+                    <span class="material-icons">account_circle</span>
+                    <span id="userName">Loading...</span>
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1>My Tattoo Journey</h1>
+                <p class="subtitle">Track your tattoo appointments and their status</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="material-icons">calendar_today</span>
+                    <h3>Total Bookings</h3>
+                    <p id="totalBookings">0</p>
+                </div>
+                <div class="stat-card">
+                    <span class="material-icons">pending</span>
+                    <h3>Pending</h3>
+                    <p id="pendingBookings">0</p>
+                </div>
+                <div class="stat-card">
+                    <span class="material-icons">check_circle</span>
+                    <h3>Approved</h3>
+                    <p id="approvedBookings">0</p>
+                </div>
+            </div>
+
+            <div class="reservations-wrapper">
+                <div class="section-header">
+                    <h2>Your Reservations</h2>
+                    <div class="status-filters">
+                        <button class="filter-btn active" data-status="all">
+                            <span class="material-icons">list</span>All
+                        </button>
+                        <button class="filter-btn" data-status="pending">
+                            <span class="material-icons">pending</span>Pending
+                        </button>
+                        <button class="filter-btn" data-status="approved">
+                            <span class="material-icons">check_circle</span>Approved
+                        </button>
+                        <button class="filter-btn" data-status="rejected">
+                            <span class="material-icons">cancel</span>Rejected
+                        </button>
+                    </div>
+                </div>
+
+                <div class="reservations-grid" id="reservationsGrid">
+                    <!-- Reservations will be populated here -->
+                </div>
+            </div>
+
+            <div class="no-bookings" id="noBookings" style="display: none;">
+                <span class="material-icons">calendar_today</span>
+                <h3>No Bookings Found</h3>
+                <p>You haven't made any tattoo appointments yet.</p>
+                <a href="home.html#booking" class="book-now-btn">Book Now</a>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="../js/reservations.js"></script>
+</body>
+</html>

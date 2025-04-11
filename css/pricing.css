@@ -1,0 +1,213 @@
+/* Pricing Page Specific Styles */
+
+/* Updating color scheme to match home.css with brown and cream colors */
+
+
+
+/* Hero Section */
+.pricing-hero {
+    background: #1B1714;
+    background-size: cover;
+    background-position: center;
+    color: #f5f0e1;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.pricing-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pricing-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.pricing-hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+/* Pricing Factors Section */
+.pricing-info {
+    padding: 80px 20px;
+    background-color: #f5f0e1; /* Cream background */
+}
+
+.pricing-info h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.pricing-factors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.factor {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.factor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.factor-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #5c4033 0%, #8b5a2b 100%); /* Brown gradient */
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.factor-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(0) invert(1);
+}
+
+.factor h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.factor p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Pricing Packages */
+.pricing-packages {
+    padding: 80px 20px;
+    background-color: #f5f0e1; /* Cream background */
+}
+
+.pricing-packages h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package {
+    background-color: #1B1714;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.package.featured {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid #5c4033; /* Brown border */
+}
+
+.package.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.package-header {
+    background: linear-gradient(135deg, #5c4033 0%, #8b5a2b 100%); /* Brown gradient */
+    color: #f5f0e1; /* Cream text */
+    padding: 20px;
+    text-align: center;
+}
+
+.package-header h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.package-content {
+    padding: 30px;
+}
+
+.package-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.package-content li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+.package-content li:before {
+    content: '✓';
+    color: #5c4033; /* Brown checkmark */
+    position: absolute;
+    left: 0;
+}
+
+.package-image {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 150px; /* Reduced from 180px */
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed from cover to contain */
+    transition: transform 0.5s ease;
+    padding: 10px; /* Added padding around images */
+    /* Removed the filter property that was inverting colors */
+}
+
+.package:hover .package-image img {
+    transform: scale(1.1);
+}
+
+
+.faq .h2 {
+    color: #f5f0e1; /* Cream background */;
+}
